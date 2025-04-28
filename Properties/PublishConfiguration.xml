@@ -1,0 +1,21 @@
+<Publish>
+  <ModId Value="" />
+  <DisplayName Value="Example Pack (do not subscribe)" />
+  <ShortDescription Value="Example Pack Description" />
+  <LongDescription>## Asset Pack Name
+This asset packs adds xxx and yyy to the game
+
+## Added Assets:
+- Asset 1
+- Asset 2
+- Asset 3 (special)</LongDescription>
+  <Thumbnail Value="Properties/Thumbnail.png" />
+  <Screenshot Value="" />
+  <Tag Value="Code Mod" />
+  <ForumLink Value="" />
+  <ModVersion Value="1.0" />
+  <GameVersion Value="1.2.*" />
+  <Dependency Id="78903" />
+  <ChangeLog>Initial release</ChangeLog>
+  <ExternalLink Type="discord" Url="https://discord.gg/UkKAfRqfCn" />
+</Publish>
