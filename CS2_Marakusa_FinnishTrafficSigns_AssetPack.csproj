@@ -18,6 +18,8 @@
         <!--The file where mod information which is required for publishing mod on PDX mods are stored-->
         <PublishConfigurationPath>Properties\PublishConfiguration.xml</PublishConfigurationPath>
 
+		<GitHubLink>https://github.com/Marakusa/CS2-FinlandTrafficSigns-CustomAssetPack</GitHubLink>
+
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
 
         <AssemblyVersion>0.1.0</AssemblyVersion>
