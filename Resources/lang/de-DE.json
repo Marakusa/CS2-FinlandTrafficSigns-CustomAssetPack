@@ -1,4 +1,6 @@
 {
   "Assets.NAME[CarProp]": "AutoProp",
-  "Assets.DESCRIPTION[CarProp]": "Ein kleines Auto zur Dekoration ohne jegliche Funktionalität"
+  "Assets.DESCRIPTION[CarProp]": "Ein kleines Auto zur Dekoration ohne jegliche Funktionalität",
+  "Assets.NAME[Finland3WayJuncLeftWide_RenderPrefab]": "Finland3WayJuncLeftWide_RenderPrefab",
+  "Assets.DESCRIPTION[Finland3WayJuncLeftWide_RenderPrefab]": ""
 }

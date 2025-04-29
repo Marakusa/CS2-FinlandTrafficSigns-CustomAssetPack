@@ -1,19 +1,19 @@
 <Publish>
   <ModId Value="" />
-  <DisplayName Value="Example Pack (do not subscribe)" />
-  <ShortDescription Value="Example Pack Description" />
-  <LongDescription>## Asset Pack Name
-This asset packs adds xxx and yyy to the game
+  <DisplayName Value="FI - Finland Traffic Signs (Asset Pack)" />
+  <ShortDescription Value="Asset Pack containing various Finnish traffic signs." />
+  <LongDescription>## FI - Finland Traffic Signs
+This asset packs adds Finnish traffic signs to the game
 
 ## Added Assets:
-- Asset 1
-- Asset 2
-- Asset 3 (special)</LongDescription>
-  <Thumbnail Value="Properties/Thumbnail.png" />
-  <Screenshot Value="" />
+- Traffic Sign objects
+- Decals</LongDescription>
+  <Thumbnail Value="Properties/Thumbnail.jpg" />
+  <Screenshot Value="Properties/1234.jpg" />
+  <Screenshot Value="Properties/45.jpg" />
   <Tag Value="Code Mod" />
   <ForumLink Value="" />
-  <ModVersion Value="1.0" />
+  <ModVersion Value="0.1" />
   <GameVersion Value="1.2.*" />
   <Dependency Id="78903" />
   <ChangeLog>Initial release</ChangeLog>
