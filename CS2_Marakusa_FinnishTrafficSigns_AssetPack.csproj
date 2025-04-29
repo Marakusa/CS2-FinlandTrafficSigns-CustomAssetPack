@@ -6,7 +6,7 @@
         <Configurations>Debug;Release</Configurations>
 
         <!--The folder where Game.dll is located. Set it only if the game is not installed in the default location, otherwise keep it empty-->
-        <CustomManagedPath></CustomManagedPath>
+        <CustomManagedPath>D:\SteamLibrary\steamapps\common\Cities Skylines II\Cities2.exe</CustomManagedPath>
 
         <!--Path to the text file where PDX account data is stored which is required to publish the mod-->
         <!--Keep it outside of project in order to not commit it or share accidentally-->
@@ -20,15 +20,42 @@
 
         <AdditionalFilesDirectory>Resources</AdditionalFilesDirectory>
 
-        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <AssemblyVersion>0.1.0</AssemblyVersion>
 
-        <FileVersion>1.0.0</FileVersion>
+        <FileVersion>0.1.0</FileVersion>
     </PropertyGroup>
     
     <!--Imports must be after PropertyGroup block-->
-    <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props"/>
-    <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets"/>
+    <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.props" />
+    <Import Project="$([System.Environment]::GetEnvironmentVariable('CSII_TOOLPATH', 'EnvironmentVariableTarget.User'))\Mod.targets" />
 
+	<ItemGroup>
+		<Reference Include="$(UserDataPath)\.cache\Mods\mods_subscribed\80529_*\ExtraAssetsImporter.dll" Private="False" />
+	</ItemGroup>
+
+	<Target Name="GetCustomAssetsFiles" AfterTargets="DeployWIP">
+		<ItemGroup>
+			<AdditionalFilesToDeploy Include="CustomAssets\**\*.*" />
+		</ItemGroup>
+		<Copy SourceFiles="@(AdditionalFilesToDeploy)" DestinationFiles="@(AdditionalFilesToDeploy->'$(DeployDir)\%(RecursiveDir)%(Filename)%(Extension)')" />
+	</Target>
+
+	<ItemGroup>
+		<ModTag Include="Code Mod" />
+		<Screenshots Include="Properties/*.jpg" />
+		<Compile Remove="CustomAssets\FI Traffic Signs\**" />
+		<EmbeddedResource Remove="CustomAssets\FI Traffic Signs\**" />
+		<None Remove="CustomAssets\FI Traffic Signs\**" />
+		<Dependency Include="WriteEverywhere">
+			<ModId>92908</ModId>
+			<DisplayName>Write Everywhere</DisplayName>
+		</Dependency>
+		<Dependency Include="ExtraAssetsImporter">
+			<ModId>80529</ModId>
+			<DisplayName>ExtraAssetsImporter</DisplayName>
+		</Dependency>
+	</ItemGroup>
+	
     <ItemGroup>
         <Reference Include="Game">
             <Private>false</Private>
@@ -72,11 +99,12 @@
     </ItemGroup>
 
     <ItemGroup>
-        <None Include="$(ModPropsFile)" Link="Properties\Mod.props"/>
-        <None Include="$(ModTargetsFile)" Link="Properties\Mod.targets"/>
+        <None Include="$(ModPropsFile)" Link="Properties\Mod.props" />
+        <None Include="$(ModTargetsFile)" Link="Properties\Mod.targets" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="CustomAssets\CustomDecals\" />
       <Folder Include="Resources\assets\ExamplePack\" />
     </ItemGroup>
 

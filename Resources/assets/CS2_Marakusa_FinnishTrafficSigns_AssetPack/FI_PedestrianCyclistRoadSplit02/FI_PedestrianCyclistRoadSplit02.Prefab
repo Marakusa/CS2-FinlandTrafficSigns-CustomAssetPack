@@ -1,0 +1,126 @@
+{
+    "$id": 0,
+    "$type": "0|Game.Prefabs.StaticObjectPrefab, Game",
+    "name": "FI_PedestrianCyclistRoadSplit02",
+    "active": true,
+    "components": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[Game.Prefabs.ComponentBase, Game]], mscorlib",
+        "$rlength": 5,
+        "$rcontent": [
+            {
+                "$id": 2,
+                "$type": "2|Game.Prefabs.SpawnableObject, Game",
+                "name": "SpawnableObject",
+                "active": true,
+                "m_Placeholders": {
+                    "$id": 3,
+                    "$type": "3|Game.Prefabs.ObjectPrefab[], Game",
+                    "$rlength": 2,
+                    "$rcontent": [
+                        $fstrref:"UnityGUID:d6bfcb262f4ba2348b9ed2f29fc63a13",
+                        $fstrref:"UnityGUID:2b45207beb1f9e84bac7bd3887b80875"
+                    ]
+                },
+                "m_Probability": 100,
+                "m_RandomizationGroup": null
+            },
+            {
+                "$id": 4,
+                "$type": "4|Game.Prefabs.TrafficSignObject, Game",
+                "name": "TrafficSignObject",
+                "active": true,
+                "m_SignTypes": {
+                    "$id": 5,
+                    "$type": "5|Game.Prefabs.TrafficSignType[], Game",
+                    "$rlength": 0,
+                    "$rcontent": [
+                    ]
+                },
+                "m_SpeedLimit": 0
+            },
+            {
+                "$id": 6,
+                "$type": "6|Game.Prefabs.ThemeObject, Game",
+                "name": "ThemeObject",
+                "active": true,
+                "m_Theme": $fstrref:"UnityGUID:846c60044f7ead04d9b11f0d749ea5f2"
+            },
+            {
+                "$id": 7,
+                "$type": "7|Game.Prefabs.StandingObject, Game",
+                "name": "StandingObject",
+                "active": true,
+                "m_LegSize": {
+                    "$type": "8|Unity.Mathematics.float3, Unity.Mathematics",
+                    "x": 0.1,
+                    "y": 0.6,
+                    "z": 0.1
+                },
+                "m_CircularLeg": true
+            },
+            {
+                "$id": 8,
+                "$type": "9|Game.Prefabs.UIObject, Game",
+                "name": "UIObject",
+                "active": true,
+                "m_Group": $fstrref:"UnityGUID:7a12eca739ae9604b9d7f9a650484a98",
+                "m_Priority": 0,
+                "m_Icon": "coui://customassets/CS2_Marakusa_FinnishTrafficSigns_AssetPack/FI_PedestrianCyclistRoadSplit02/FI_PedestrianCyclistRoadSplit02.png",
+                "m_IsDebugObject": false
+            }
+        ]
+    },
+    "m_Meshes": {
+        "$id": 9,
+        "$type": "10|Game.Prefabs.ObjectMeshInfo[], Game",
+        "$rlength": 2,
+        "$rcontent": [
+            {
+                "$id": 10,
+                "$type": "11|Game.Prefabs.ObjectMeshInfo, Game",
+                "m_Mesh": $fstrref:"UnityGUID:ea93412e0faa4cc49b43ceb009c0d4a6",
+                "m_Position": {
+                    "$type": 8,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "m_Rotation": {
+                    "$type": "12|Unity.Mathematics.quaternion, Unity.Mathematics",
+                    "value": {
+                        "$type": "13|Unity.Mathematics.float4, Unity.Mathematics",
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    }
+                },
+                "m_RequireState": 0
+            },
+            {
+                "$id": 11,
+                "$type": 11,
+                "m_Mesh": $fstrref:"CID:229f149812088767085f8dd7dddd8c6d",
+                "m_Position": {
+                    "$type": 8,
+                    "x": 0,
+                    "y": 1.86,
+                    "z": 0.065
+                },
+                "m_Rotation": {
+                    "$type": 12,
+                    "value": {
+                        "$type": 13,
+                        "x": 3.090862E-08,
+                        "y": 0.707106769,
+                        "z": 0.707106769,
+                        "w": -3.090862E-08
+                    }
+                },
+                "m_RequireState": 0
+            }
+        ]
+    },
+    "m_Circular": false
+}
