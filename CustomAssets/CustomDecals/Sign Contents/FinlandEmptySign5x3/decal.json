@@ -17,7 +17,7 @@
         "_DecalMeshViewBias": 0,
         "_DecalStencilRef": 16,
         "_DecalStencilWriteMask": 16,
-        "_DrawOrder": 58,
+        "_DrawOrder": 59,
         "_MetallicAlphaSource": 0,
         "_MetallicOpacity": 1,
         "_NormalAlphaSource": 0,
@@ -152,9 +152,9 @@
             "w": 0
         },
         "colossal_MeshSize": {
-            "x": 2.5,
+            "x": 4.5,
             "y": 0.025,
-            "z": 2.5,
+            "z": 4.5,
             "w": 0
         },
         "colossal_TextureArea": {

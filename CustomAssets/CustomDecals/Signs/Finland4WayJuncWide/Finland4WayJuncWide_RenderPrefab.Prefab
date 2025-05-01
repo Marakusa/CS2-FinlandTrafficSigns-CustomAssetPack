@@ -32,28 +32,28 @@
             }
         ]
     },
-    "m_GeometryAsset": $fstrref:"CID:0283dd4e0ee60ad449f499bd51bbddbd",
+    "m_GeometryAsset": $fstrref:"CID:3465115a73168184fbd1949e68083899",
     "m_SurfaceAssets": {
         "$id": 3,
         "$type": "5|Colossal.IO.AssetDatabase.AssetReference`1[[Colossal.IO.AssetDatabase.SurfaceAsset, Colossal.IO.AssetDatabase, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][], Colossal.IO.AssetDatabase",
         "$rlength": 1,
         "$rcontent": [
-            $fstrref:"CID:5bbad86de3dc9cf4c97a9f11db3a42e1"
+            $fstrref:"CID:d1b25a9e9710eb5408ce729eb48ddeff"
         ]
     },
     "m_Bounds": {
         "$type": "6|Colossal.Mathematics.Bounds3, Colossal.Mathematics",
         "min": {
             "$type": "7|Unity.Mathematics.float3, Unity.Mathematics",
-            "x": -1.8,
+            "x": -3.75,
             "y": -0.0125,
-            "z": -1.8
+            "z": -3.75
         },
         "max": {
             "$type": 7,
-            "x": 1.8,
+            "x": 3.75,
             "y": 0.0125,
-            "z": 1.8
+            "z": 3.75
         }
     },
     "m_SurfaceArea": 0,
